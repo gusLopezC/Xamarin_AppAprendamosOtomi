@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AprendamosOtomi.Bienvenida">
+    <ContentPage.Content>
+        <Grid VerticalOptions="Center">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="auto"></RowDefinition>
+                <RowDefinition Height="auto"></RowDefinition>
+                <RowDefinition Height="auto"></RowDefinition>
+            </Grid.RowDefinitions>
+            <Image Grid.Row="0" Source="tutulo.png" WidthRequest="250" HeightRequest="250"></Image>
+            <StackLayout Grid.Row="1" HorizontalOptions="Center">
+                <Label Text="BIENVENIDO" FontSize="Medium" HorizontalOptions="Center"></Label>
+                <Label Text="Bienvenido a Aprendamos Otomi con esta app podras acercarte a la lengua nañhu de la manera mas autodidacta para aprender expresiones y palabras que caracteristicas al mundo de la cultura otomi."></Label>
+                <Label Text="Este material puede ser funcional para otras variaciones debido a la escritura y ortografia de esta app recurre  a las raices de las palabras para que los lectores puedan identifcar y comprender facilmente"></Label>
+            </StackLayout>
+            <Button Grid.Row="2"  Style="{StaticResource btnAceptar}" TextColor="WhiteSmoke" x:Name="btnEntrar" Text="ENTRAR"></Button>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

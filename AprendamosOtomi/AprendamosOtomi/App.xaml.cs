@@ -11,8 +11,10 @@ namespace AprendamosOtomi
 		{
 			InitializeComponent();
 
-			MainPage = new MainPage();
-		}
+            var navigationPage = new NavigationPage(new Bienvenida());
+            navigationPage.BarBackgroundColor = Color.FromHex("#FF4081");
+            MainPage = navigationPage;
+        }
 
 		protected override void OnStart ()
 		{

@@ -3,12 +3,79 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:AprendamosOtomi"
              x:Class="AprendamosOtomi.MainPage">
+    <ScrollView Orientation="Vertical" VerticalOptions="StartAndExpand">
+        <Grid>
 
-    <StackLayout>
-        <!-- Place new controls here -->
-    	<Label Text="Welcome to Xamarin.Forms!" 
-           HorizontalOptions="Center"
-           VerticalOptions="CenterAndExpand" />
-    </StackLayout>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+
+
+            <StackLayout Grid.Row="0" Grid.ColumnSpan="2">
+                <Image Margin="0" VerticalOptions="Start"  Source="tutulo.png"/>
+
+                <Label  Text="BIENVENIDO/Hogä ehe" HorizontalOptions="CenterAndExpand" TextColor="DarkCyan" FontSize="Large" FontAttributes="Bold"/>
+                <Label  Text="Que te gustaria aprender?" HorizontalOptions="CenterAndExpand" TextColor="DarkCyan" FontSize="Large" FontAttributes="Bold"/>
+            </StackLayout>
+            <StackLayout Grid.Row="1" Grid.Column="0"  HorizontalOptions="Center">
+                <Image  Source="iconFood.png" WidthRequest="100" HeightRequest="100"></Image>
+                <Button x:Name="btnComida" Style="{StaticResource btnAceptar}"
+                    Text="Frutos y otras plantas" TextColor="WhiteSmoke" HorizontalOptions="FillAndExpand"/>
+            </StackLayout>
+            <StackLayout Grid.Row="1"  Grid.Column="1" HorizontalOptions="Center">
+                <Image Source="familia.png" WidthRequest="100" HeightRequest="100"></Image>
+                <Button x:Name="btnFamilia" Style ="{StaticResource btnAceptar}"
+                    Text="Familia" TextColor="WhiteSmoke"  HorizontalOptions="FillAndExpand"/>
+            </StackLayout>
+            <StackLayout Grid.Row="2" Grid.Column="0"  HorizontalOptions="Center">
+                <Image Source="cuerpo.png"  WidthRequest="100" HeightRequest="100"></Image>
+                <Button x:Name="btnCuerpo" Style="{StaticResource btnAceptar}"
+                    Text="Mi cuerpo" TextColor="WhiteSmoke" HorizontalOptions="FillAndExpand"/>
+            </StackLayout>
+            <StackLayout  Grid.Row="2" Grid.Column="1" HorizontalOptions="Center">
+                <Image  Source="iconRopa.png" WidthRequest="100" HeightRequest="100"></Image>
+                <Button x:Name="btnVestimenta" Style="{StaticResource btnAceptar}"
+                    Text="Vestimenta" TextColor="WhiteSmoke" HorizontalOptions="FillAndExpand"/>
+            </StackLayout>
+            <StackLayout  Grid.Row="3" Grid.Column="0" HorizontalOptions="Center">
+                <Image Source="iconAnimales.png"  WidthRequest="100" HeightRequest="100"></Image>
+                <Button x:Name="btnAnimales" Style="{StaticResource btnAceptar}"
+                    Text="Animales" TextColor="WhiteSmoke"  HorizontalOptions="FillAndExpand"/>
+            </StackLayout>
+            <StackLayout  Grid.Row="3" Grid.Column="1" HorizontalOptions="Center">
+                <Image Source="icoColores.png"  WidthRequest="100" HeightRequest="100"></Image>
+                <Button x:Name="btnColores" Style="{StaticResource btnAceptar}"
+                    Text="Colores" TextColor="WhiteSmoke" HorizontalOptions="FillAndExpand"/>
+            </StackLayout>
+            <StackLayout  Grid.Row="4" Grid.Column="0" HorizontalOptions="Center">
+                <Image Source="saludo.png" WidthRequest="100" HeightRequest="100"></Image>
+
+                <Button x:Name="btnSaludos" Style="{StaticResource btnAceptar}" 
+                             Text="Saludos" TextColor="WhiteSmoke" HorizontalOptions="Fill"/>
+            </StackLayout>
+            <StackLayout  Grid.Row="4" Grid.Column="1" HorizontalOptions="Center">
+                <Image Source="iconTradicion.png" WidthRequest="100" HeightRequest="100"></Image>
+                <Button x:Name="btnTradicciones" Style="{StaticResource btnAceptar}"
+                    Text="Tradicciones" TextColor="WhiteSmoke" HorizontalOptions="FillAndExpand"/>
+            </StackLayout>
+            <StackLayout  Grid.Row="5" Grid.ColumnSpan="2" HorizontalOptions="Center">
+                <Image Source="traductor.png" WidthRequest="100" HeightRequest="100"></Image>
+
+                <Button x:Name="btnTraductor" Style="{StaticResource btnAceptar}"
+                    Text="Traductor" TextColor="WhiteSmoke" HorizontalOptions="FillAndExpand"/>
+            </StackLayout>
+        </Grid>
+    </ScrollView>
 
 </ContentPage>

@@ -3,6 +3,25 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="AprendamosOtomi.App">
 	<Application.Resources>
-    
-	</Application.Resources>
+        <ResourceDictionary>
+            <Color x:Key="Azul">#FF4081</Color>
+            <Color x:Key="Verde">#00FF00</Color>
+            <Color x:Key="Naranja">#FF88000</Color>
+            <Color x:Key="Rojo">#FF0000</Color>
+
+
+            <Style x:Key="btnAceptar" TargetType="Button">
+                <Setter Property="BackgroundColor" Value="{StaticResource Azul}"/>
+                <Setter Property="Text" Value="Aceptar"/>
+            </Style>
+            <Style x:Key="btnGuardar" TargetType="Button">
+                <Setter Property="BackgroundColor" Value="{StaticResource Verde}"/>
+                <Setter Property="Text" Value="Guardar"/>
+            </Style>
+            <Style x:Key="btnEliminar" TargetType="Button">
+                <Setter Property="BackgroundColor" Value="{StaticResource Naranja}"/>
+                <Setter Property="Text" Value="Eliminar"/>
+            </Style>
+        </ResourceDictionary>
+    </Application.Resources>
 </Application>
