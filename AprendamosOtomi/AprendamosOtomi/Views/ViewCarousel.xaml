@@ -12,7 +12,7 @@
                     </DataTemplate>
                 </forms:CarouselView.ItemTemplate>
             </forms:CarouselView>
-
+            
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

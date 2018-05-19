@@ -1,8 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="AprendamosOtomi.Bienvenida">
+             x:Class="AprendamosOtomi.Bienvenida"
+             Title="Bienvenida">
     <ContentPage.Content>
+        <ScrollView Orientation="Vertical" VerticalOptions="StartAndExpand">
         <Grid VerticalOptions="Center">
             <Grid.RowDefinitions>
                 <RowDefinition Height="auto"></RowDefinition>
@@ -17,5 +19,6 @@
             </StackLayout>
             <Button Grid.Row="2"  Style="{StaticResource btnAceptar}" TextColor="WhiteSmoke" x:Name="btnEntrar" Text="ENTRAR"></Button>
         </Grid>
+        </ScrollView>
     </ContentPage.Content>
 </ContentPage>

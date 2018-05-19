@@ -32,13 +32,14 @@ namespace AprendamosOtomi.WebApiFiles
         }
         public void LoadList()
         {
-            var traduccion = new MetodoTraducir { TipoAccion = "Traductor" };
-            var json = JsonConvert.SerializeObject(traduccion);
-            HttpWebRequest request = WebRequest.Create(RestService.Servidor + RestService.Methods.TraductorMethod + "?id=0&data=" + json) as HttpWebRequest;
+            // var traduccion = new MetodoTraducir { TipoAccion = "Traductor" };
+            //var json = JsonConvert.SerializeObject(traduccion);                                   + "?id=0&data=" + json
+            HttpWebRequest request = WebRequest.Create(RestService.Servidor + RestService.Methods.TraductorMethod ) as HttpWebRequest;
             request.Method = RestService.HTTPMethods.Get;
             request.ContentType = RestService.ContentType;
             string resp;
             HttpWebResponse response = request.GetResponse() as HttpWebResponse;
+            Console.Out.WriteLine(response);
             //-----------
             using (StreamReader reader = new StreamReader(response.GetResponseStream()))
             {
