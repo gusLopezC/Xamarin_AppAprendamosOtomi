@@ -6,10 +6,11 @@
         <StackLayout>
             <Label Text="Traductor!"
                 VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-            <Entry Placeholder="Ingrese palabra" TextColor="#FF4081"></Entry>
+                HorizontalOptions="CenterAndExpand" FontSize="Large"/>
+            <Entry Placeholder="Ingrese palabra" TextColor="#FF4081" x:Name="EntryTraductor"></Entry>
+            
+            <Label WidthRequest="200" HeightRequest="200" VerticalOptions="Center" x:Name="ResultTraductor"></Label>
 
-            <BoxView WidthRequest="200" HeightRequest="200" VerticalOptions="Center"></BoxView>
 
             <Button x:Name="btnTraduce" Style="{StaticResource btnAceptar}"
                     Text="Traduce" TextColor="WhiteSmoke" HorizontalOptions="FillAndExpand"/>

@@ -1,4 +1,5 @@
-﻿using Newtonsoft.Json;
+﻿
+using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 using System;
 using System.Collections.Generic;
@@ -39,12 +40,11 @@ namespace AprendamosOtomi.WebApiFiles
             request.ContentType = RestService.ContentType;
             string resp;
             HttpWebResponse response = request.GetResponse() as HttpWebResponse;
-            Console.Out.WriteLine(response);
             //-----------
             using (StreamReader reader = new StreamReader(response.GetResponseStream()))
             {
                 resp = reader.ReadToEnd();
-                var obj = JsonConvert.DeserializeObject<object>(resp);
+                var obj = Newtonsoft.Json.JsonConvert.DeserializeObject<object>(resp);
                 string data = (string)obj;
                 JObject json2 = JObject.Parse(data);
                 var respuesta_data = json2;
@@ -54,7 +54,7 @@ namespace AprendamosOtomi.WebApiFiles
                     var ListaFlujosJS = respuesta_data.GetValue("Objeto").ToString();
                     try
                     {
-                        var objResponse1 = JsonConvert.DeserializeObject<Model>(ListaFlujosJS);
+                        var objResponse1 = JsonConvert.DeserializeObject<MostrandoTraducciones>(ListaFlujosJS);
 
                         _id = objResponse1._id;
                         Lista.Add(_id.ToString());

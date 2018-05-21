@@ -1,7 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-              xmlns:forms="clr-namespace:Xamarin.Forms;assembly=Xamarin.Forms.CarouselView"
+             
+             xmlns:forms="clr-namespace:Xamarin.Forms;assembly=Xamarin.Forms.CarouselView"
+             xmlns:local="clr-namespace:AprendamosOtomi.Views"
              x:Class="AprendamosOtomi.Views.ViewCarousel">
     <ContentPage.Content>
         <StackLayout>
@@ -12,6 +14,13 @@
                     </DataTemplate>
                 </forms:CarouselView.ItemTemplate>
             </forms:CarouselView>
+            <local:Carouselndicator IndicatorHeight="12" IndicatorWidth="12" 
+                                     UnselectedIndicator="unselected_circle.png" 
+                                     SelectedIndicator="selected_circle.png" 
+                                     Position="{Binding Position}" 
+                                     ItemsSource="{Binding MyDataSource}"
+			                         AbsoluteLayout.LayoutBounds="0, 0.9, 1, 0.1" 
+AbsoluteLayout.LayoutFlags="All"/>
             
         </StackLayout>
     </ContentPage.Content>

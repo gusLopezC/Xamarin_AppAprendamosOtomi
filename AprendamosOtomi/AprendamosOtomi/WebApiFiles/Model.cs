@@ -4,12 +4,21 @@ using System.Text;
 
 namespace AprendamosOtomi.WebApiFiles
 {
-    public class Model
+    public class  Model
     {
+        public List<MostrandoTraducciones> mostrandoTraducciones { get; set; }
 
-        public String _id { get; set; }
-        public String espaniol { get; set; }
-        public String otomi { get; set; }
-        public int __v { get; set; }
     }
+
+    public class MostrandoTraducciones
+    {
+        public string _id { get; set; }
+        public int __v { get; set; }
+        public string espaniol { get; set; }
+        public string otomi { get; set; }
+
+        
+    }
+
+
 }
