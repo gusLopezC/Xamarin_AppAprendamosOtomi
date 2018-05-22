@@ -14,14 +14,7 @@
                     </DataTemplate>
                 </forms:CarouselView.ItemTemplate>
             </forms:CarouselView>
-            <local:Carouselndicator IndicatorHeight="12" IndicatorWidth="12" 
-                                     UnselectedIndicator="unselected_circle.png" 
-                                     SelectedIndicator="selected_circle.png" 
-                                     Position="{Binding Position}" 
-                                     ItemsSource="{Binding MyDataSource}"
-			                         AbsoluteLayout.LayoutBounds="0, 0.9, 1, 0.1" 
-AbsoluteLayout.LayoutFlags="All"/>
-            
+     
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

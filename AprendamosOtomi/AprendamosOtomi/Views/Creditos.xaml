@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AprendamosOtomi.Views.Creditos">
+    <ContentPage.Content>
+        <StackLayout  HorizontalOptions="Center">
+            <Label Text="CREDITOS" TextColor="#FF4081" Font="Bold,40" HorizontalOptions="Center" ></Label>
+            <Label Text="Contenid digital,Diseño y Desarrollo Tecnologico" TextColor="#FF4081" Font="Bold,20" HorizontalOptions="Center"></Label>
+            <Label Text="Larissa Tellez Giron Saenz" TextColor="#FF4081" Font="Italic,16" HorizontalOptions="Center"></Label>
+            <Label Text="Gustavo Lopez Callejas" TextColor="#FF4081" Font="Italic,16" HorizontalOptions="Center"></Label>
+            <Label Text="Jesus Alberto Chavez Trejo" TextColor="#FF4081" Font="Italic,16" HorizontalOptions="Center"></Label>
+            <Label Text="Agradecimiento" TextColor="#FF4081" Font="Bold,25" HorizontalOptions="Center" ></Label>
+            <Label Text="AULEX Diccionario español - otomí" TextColor="#FF4081" Font="Bold,20" HorizontalOptions="Center"></Label>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

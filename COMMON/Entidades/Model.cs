@@ -1,15 +1,16 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
+using System.Threading.Tasks;
 
-namespace AprendamosOtomi.WebApiFiles
+namespace COMMON.Entidades
 {
-    public class  Model
+    public class Model
     {
         public List<MostrandoTraducciones> mostrandoTraducciones { get; set; }
 
     }
-
     public class MostrandoTraducciones
     {
         public string _id { get; set; }
@@ -22,6 +23,4 @@ namespace AprendamosOtomi.WebApiFiles
         }
 
     }
-
-
 }

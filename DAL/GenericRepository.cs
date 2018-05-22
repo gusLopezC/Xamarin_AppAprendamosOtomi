@@ -1,4 +1,4 @@
-﻿
+﻿using COMMON.Entidades;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 using System;
@@ -9,31 +9,24 @@ using System.Net;
 using System.Text;
 using System.Threading.Tasks;
 
-
-using Xamarin.Forms;
-using Xamarin.Forms.Xaml;
-
-namespace AprendamosOtomi.WebApiFiles
+namespace DAL
 {
-    [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class WebApiList : ContentPage
+    public partial class GenericRepository
     {
         public String _id = "";
         public String espaniol = "";
         public String otomi = "";
         public int __v = 0;
-        public WebApiList()
+      
+
+        public GenericRepository()
         {
-            InitializeComponent();
-            LoadList();
-
-
+           LoadList();
         }
+
         public void LoadList()
         {
-            // var traduccion = new MetodoTraducir { TipoAccion = "Traductor" };
-            //var json = JsonConvert.SerializeObject(traduccion);                                   + "?id=0&data=" + json
-            HttpWebRequest request = WebRequest.Create(RestService.Servidor + RestService.Methods.TraductorMethod ) as HttpWebRequest;
+            HttpWebRequest request = WebRequest.Create(RestService.Servidor + RestService.Methods.TraductorMethod) as HttpWebRequest;
             request.Method = RestService.HTTPMethods.Get;
             request.ContentType = RestService.ContentType;
             string resp;
@@ -42,8 +35,7 @@ namespace AprendamosOtomi.WebApiFiles
             using (StreamReader reader = new StreamReader(response.GetResponseStream()))
             {
                 resp = reader.ReadToEnd();
-                Model obj = JsonConvert.DeserializeObject<Model>(resp);
-                WebApi.ItemsSource = obj.mostrandoTraducciones;    
+                Model obj = JsonConvert.DeserializeObject<Model>(resp);  
             }
         }
     }

@@ -5,7 +5,7 @@
              NavigationPage.HasNavigationBar="False"
              Title="Bienvenida">
     <ContentPage.Content>
-        <ScrollView Orientation="Vertical" VerticalOptions="StartAndExpand">
+        
         <Grid VerticalOptions="Center">
             <Grid.RowDefinitions>
                 <RowDefinition Height="auto"></RowDefinition>
@@ -20,6 +20,6 @@
             </StackLayout>
             <Button Grid.Row="2"  Style="{StaticResource btnAceptar}" TextColor="WhiteSmoke" x:Name="btnEntrar" Text="ENTRAR"></Button>
         </Grid>
-        </ScrollView>
+        
     </ContentPage.Content>
 </ContentPage>
