@@ -1,7 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="AprendamosOtomi.Views.Creditos">
+              BackgroundImage="fondotraductor"
+             x:Class="AprendamosOtomi.Views.Creditos"
+             Title="Creditos">
     <ContentPage.Content>
         <StackLayout  HorizontalOptions="Center">
             <Label Text="CREDITOS" TextColor="#FF4081" Font="Bold,40" HorizontalOptions="Center" ></Label>
