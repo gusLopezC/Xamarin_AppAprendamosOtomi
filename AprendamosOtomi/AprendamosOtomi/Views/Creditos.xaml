@@ -6,6 +6,7 @@
              Title="Creditos">
     <ContentPage.Content>
         <StackLayout  HorizontalOptions="Center">
+            <BoxView WidthRequest="120" HeightRequest="120"></BoxView>
             <Label Text="CREDITOS" TextColor="#FF4081" Font="Bold,40" HorizontalOptions="Center" ></Label>
             <Label Text="Contenid digital,Diseño y Desarrollo Tecnologico" TextColor="#FF4081" Font="Bold,20" HorizontalOptions="Center"></Label>
             <Label Text="Larissa Tellez Giron Saenz" TextColor="#FF4081" Font="Italic,16" HorizontalOptions="Center"></Label>
