@@ -1,4 +1,5 @@
-﻿using AprendamosOtomi.WebApiFiles;
+﻿using Plugin.Connectivity;
+using AprendamosOtomi.WebApiFiles;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -16,6 +17,7 @@ namespace AprendamosOtomi.Views
 		public Traductor ()
 		{
 			InitializeComponent ();
+            
             btnDiccionario.Clicked += clic_diccionario;
             btnTraduce.Clicked += clic_Traductor;
             btnCredits.Clicked += clic_Creditos;
@@ -27,9 +29,28 @@ namespace AprendamosOtomi.Views
 
         public void clic_Traductor(object sender, EventArgs e)
         {
-            var texto = EntryTraductor.Text;
-            ResultTraductor.Text = texto;
-        }
+            var isConnect = CrossConnectivity.Current.IsConnected;
+            if (isConnect)
+            {
+                try
+                {
+                    var restraducion = new BIZ.TraductorManager();
+                    String palabra = EntryTraductor.Text.ToLower();
+                    var texto = restraducion.Traductor(palabra);
+                    ResultTraductor.Text = texto;
+                }
+                catch(Exception )
+                {
+                    Navigation.PushAsync(new MainPage());
+                }
+                
+            }
+            else
+            {
+                ResultTraductor.Text = "No hay conexion reintata";
+            }
+
+        }  
         public void clic_Creditos(object sender, EventArgs e)
         {
             Navigation.PushAsync(new Creditos());

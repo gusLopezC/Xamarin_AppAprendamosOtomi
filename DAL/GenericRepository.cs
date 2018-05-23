@@ -24,7 +24,7 @@ namespace DAL
            LoadList();
         }
 
-        public void LoadList()
+        public Model LoadList()
         {
             HttpWebRequest request = WebRequest.Create(RestService.Servidor + RestService.Methods.TraductorMethod) as HttpWebRequest;
             request.Method = RestService.HTTPMethods.Get;
@@ -35,7 +35,7 @@ namespace DAL
             using (StreamReader reader = new StreamReader(response.GetResponseStream()))
             {
                 resp = reader.ReadToEnd();
-                Model obj = JsonConvert.DeserializeObject<Model>(resp);  
+                return JsonConvert.DeserializeObject<Model>(resp);  
             }
         }
     }

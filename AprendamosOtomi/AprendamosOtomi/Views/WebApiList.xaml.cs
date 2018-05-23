@@ -31,7 +31,10 @@ namespace AprendamosOtomi.WebApiFiles
         }
         public void LoadList()
         {
-           
+            var repo =new DAL.GenericRepository();
+
+            WebApi.ItemsSource = repo.LoadList().mostrandoTraducciones;
+           /*
             HttpWebRequest request = WebRequest.Create(RestService.Servidor + RestService.Methods.TraductorMethod ) as HttpWebRequest;
             request.Method = RestService.HTTPMethods.Get;
             request.ContentType = RestService.ContentType;
@@ -43,7 +46,10 @@ namespace AprendamosOtomi.WebApiFiles
                 resp = reader.ReadToEnd();
                 Model obj = JsonConvert.DeserializeObject<Model>(resp);
                 WebApi.ItemsSource = obj.mostrandoTraducciones;    
+                
             }
+
+    */
         }
     }
 }

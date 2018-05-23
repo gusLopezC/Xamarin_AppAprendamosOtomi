@@ -12,8 +12,8 @@
             <Label Text="Larissa Tellez Giron Saenz" TextColor="#FF4081" Font="Italic,16" HorizontalOptions="Center"></Label>
             <Label Text="Gustavo Lopez Callejas" TextColor="#FF4081" Font="Italic,16" HorizontalOptions="Center"></Label>
             <Label Text="Jesus Alberto Chavez Trejo" TextColor="#FF4081" Font="Italic,16" HorizontalOptions="Center"></Label>
-            <Label Text="Agradecimiento" TextColor="#FF4081" Font="Bold,25" HorizontalOptions="Center" ></Label>
-            <Label Text="AULEX Diccionario español - otomí" TextColor="#FF4081" Font="Bold,20" HorizontalOptions="Center"></Label>
+            <Label Text="Agradicimeinto a Abigail Ciriaco Gonzales" TextColor="#FF4081" Font="Italic,16" HorizontalOptions="Center"></Label>
+            
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
