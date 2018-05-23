@@ -129,10 +129,10 @@
     <AndroidResource Include="Resources\drawable\nointernet.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\logo.png" />
+    <AndroidResource Include="Resources\drawable\fondotraductor.jpeg" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\fondotraductor.jpeg" />
+    <AndroidResource Include="Resources\drawable\logo.png" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
 </Project>

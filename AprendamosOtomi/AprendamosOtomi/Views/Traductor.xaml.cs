@@ -35,7 +35,7 @@ namespace AprendamosOtomi.Views
                 try
                 {
                     var restraducion = new BIZ.TraductorManager();
-                    String palabra = EntryTraductor.Text.ToLower();
+                    String palabra = EntryTraductor.Text.ToLower().Trim();
                     var texto = restraducion.Traductor(palabra);
                     ResultTraductor.Text = texto;
                 }
