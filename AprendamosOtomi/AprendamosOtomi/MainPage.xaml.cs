@@ -12,6 +12,9 @@ namespace AprendamosOtomi
 {
 	public partial class MainPage : ContentPage
 	{
+        /*
+         * Crean lista de las imagenes para mandarlas como parametros
+         * */
         public List<string> ListaVestimenta = new List<string>(){"https://preview.ibb.co/koHxMT/Vcamisa.png","https://preview.ibb.co/eoZcMT/Vfalda.png","https://preview.ibb.co/fb5TT8/Vsapare.png","https://preview.ibb.co/djH8T8/Vsueter.png"};
         public List<string> ListaFamilia = new List<string>() { "https://preview.ibb.co/eJkcBT/vcabuela.png", "https://preview.ibb.co/i0T7o8/Vabuelo.png","https://preview.ibb.co/iH4xo8/Vbebe.png","https://preview.ibb.co/dOEK1T/Vgemalas.png","https://preview.ibb.co/jz2Tvo/Vmadre.png","https://preview.ibb.co/ft3CMT/Vnieto.png","https://preview.ibb.co/jGiwgT/Vnina.png","https://preview.ibb.co/gWW5ao/Vnino.png","https://preview.ibb.co/cgndvo/Vpadre.png"};
         public List<string> ListaAnimales = new List<string>() { "https://preview.ibb.co/ej9SMT/Vardilla.png", "https://preview.ibb.co/fEuivo/Vconejo.png", "https://preview.ibb.co/hkDHd8/vcpollo.png", "https://preview.ibb.co/c106Fo/Vgato.png", "https://preview.ibb.co/mp6k88/Vmariposa.png", "https://preview.ibb.co/hzmJT8/Vobeja.png", "https://preview.ibb.co/jS4SMT/Vpajaro.png", "https://preview.ibb.co/g0fTT8/Vpato.png", "https://preview.ibb.co/fWR2o8/Vperro.png", "https://preview.ibb.co/gKtF88/Vpuerco.png", "https://preview.ibb.co/hM29ko/Vrana.png", "https://preview.ibb.co/hdeZQo/vcrata.png", "https://preview.ibb.co/gehXBT/vcvibora.png", "https://preview.ibb.co/eRGVrT/Vvaca.png" };
@@ -22,7 +25,7 @@ namespace AprendamosOtomi
         public List<string> ListaCuerpo = new List<string>() { "https://preview.ibb.co/jhhZo8/viewbrazo.png", "https://preview.ibb.co/doT788/viewmano.png", "https://preview.ibb.co/iDBaWT/vcnariz.png", "https://preview.ibb.co/cVxTFo/viewoido.png", "https://preview.ibb.co/fTeVT8/viewvista.png" };
         public MainPage()
 		{
-           
+           //inicializan los componentes
             InitializeComponent();
             btnComida.Clicked += clic_Comida;
             btnFamilia.Clicked += clic_Familia;
@@ -35,7 +38,7 @@ namespace AprendamosOtomi
             btnTraductor.Clicked += clic_Traductor;
         
         }
-
+        //Declaran los metodos para redireccionar a cada vista con sus lista a usar como practica
         public void clic_Traductor(object sender, EventArgs e)
         {
             Navigation.PushAsync(new Traductor());

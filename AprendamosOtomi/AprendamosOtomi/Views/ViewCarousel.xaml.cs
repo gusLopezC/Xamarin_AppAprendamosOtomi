@@ -15,6 +15,9 @@ namespace AprendamosOtomi.Views
        
         public ViewCarousel(List<string> Lista)
         {
+            /*
+             * Se verifica conexion y se carga los elementos de la vista
+             */
             InitializeComponent();
             var isConnect = CrossConnectivity.Current.IsConnected;
 

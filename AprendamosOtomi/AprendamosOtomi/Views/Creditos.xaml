@@ -8,11 +8,12 @@
         <StackLayout  HorizontalOptions="Center">
             <BoxView WidthRequest="120" HeightRequest="120"></BoxView>
             <Label Text="CREDITOS" TextColor="#FF4081" Font="Bold,40" HorizontalOptions="Center" ></Label>
-            <Label Text="Contenid digital,Diseño y Desarrollo Tecnologico" TextColor="#FF4081" Font="Bold,20" HorizontalOptions="Center"></Label>
+            <Label Text="Contenido digital,Diseño y Desarrollo Tecnologico" TextColor="#FF4081" Font="Bold,20" HorizontalOptions="Center"></Label>
             <Label Text="Larissa Tellez Giron Saenz" TextColor="#FF4081" Font="Italic,16" HorizontalOptions="Center"></Label>
             <Label Text="Gustavo Lopez Callejas" TextColor="#FF4081" Font="Italic,16" HorizontalOptions="Center"></Label>
             <Label Text="Jesus Alberto Chavez Trejo" TextColor="#FF4081" Font="Italic,16" HorizontalOptions="Center"></Label>
-            <Label Text="Agradicimeinto a Abigail Ciriaco Gonzales" TextColor="#FF4081" Font="Italic,16" HorizontalOptions="Center"></Label>
+            <Label Text="Monserrat Atziry Sanchez Resendiz" TextColor="#FF4081" Font="Italic,16" HorizontalOptions="Center"></Label>
+            <Label Text="Agradicimeinto a Abigail Ciriaco Gonzales" TextColor="#FF4081" Font="Italic,10" HorizontalOptions="Center"></Label>
             
         </StackLayout>
     </ContentPage.Content>

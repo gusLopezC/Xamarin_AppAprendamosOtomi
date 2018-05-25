@@ -24,11 +24,32 @@ namespace AprendamosOtomi.Views
         }
         public void clic_diccionario(object sender, EventArgs e)
         {
-            Navigation.PushAsync(new WebApiList());
-        }
+            /*
+             *Verifica la conexion y se manda  a la vista en caso de excepcion
+             */
+            var isConnect = CrossConnectivity.Current.IsConnected;
+            if (isConnect)
+            {
+                try
+                {
+                    Navigation.PushAsync(new WebApiList());
+                }
+                catch (Exception)
+                {
+                    Navigation.PushAsync(new MainPage());
+                }
 
+            }
+            else
+            {
+                Navigation.PushAsync(new MainPage());
+            }
+        }
         public void clic_Traductor(object sender, EventArgs e)
         {
+            /*
+             *Verifica la conexion y se manda a la vista con el parametro de la entrada de la pabaraa traducir
+             */
             var isConnect = CrossConnectivity.Current.IsConnected;
             if (isConnect)
             {
@@ -47,7 +68,7 @@ namespace AprendamosOtomi.Views
             }
             else
             {
-                ResultTraductor.Text = "No hay conexion reintata";
+                ResultTraductor.Text = "No hay conexion reintenta";
             }
 
         }  

@@ -13,6 +13,10 @@ namespace COMMON.Entidades
     }
     public class MostrandoTraducciones
     {
+
+        /*
+         * Crea el modelo que utilizara DAL y BIZ
+         */
         public string _id { get; set; }
         public int __v { get; set; }
         public string espaniol { get; set; }

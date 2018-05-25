@@ -9,9 +9,18 @@ namespace BIZ
 {
     public class TraductorManager
     {
-
+        /// <summary>
+        /// Este metodo recibe la conexion  de la capa DAL recibe palabraOrgin de la view  analiza en la operacion landa
+        /// y al encontrar coincidencia  returna el segundo valor del json del item otomi
+        /// </summary>
+        /// <param name="palabraOrigen"></param>
+        /// <returns></returns>
         public string Traductor(string palabraOrigen)
         {
+            /*
+             * Se crea un objeto de conexion y se busca en la base de datos coincidencia con el parametro y el dato y
+             * devuelve la palabra traducida
+             */
             var repo = new DAL.GenericRepository();
             try
             {

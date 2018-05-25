@@ -8,6 +8,10 @@ namespace DAL
 {
     public static class RestService
     {
+
+        /*
+         * Declaran la direccion  de la conexion y los metodos a usar con sus metodos crud
+         */
         public static string Servidor = "http://otomiapp.openode.io/";
         public static string Metodo = "api/Traductor";
         public static string ContentType = "application/json";
